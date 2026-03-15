@@ -1,0 +1,18 @@
+
+CREATE DATABASE IF NOT EXISTS web_demo;
+USE web_demo;
+
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+INSERT IGNORE INTO users (name, email) 
+VALUES ('Name', 'admin@example.com');
+
+
+SELECT * FROM users; 
