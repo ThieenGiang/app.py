@@ -8,7 +8,7 @@ class UserManager:
                 host='localhost',
                 database='web_demo',
                 user='root',
-                password='Gumb@110v0'  # ← Sửa chỗ này
+                password='Gumb@110v0'  
             )
             self.cursor = self.connection.cursor()
             print("Kết nối thành công!")
